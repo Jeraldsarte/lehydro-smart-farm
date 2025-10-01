@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-hydroponics.jpg";
 
 const Hero = () => {
@@ -34,14 +35,13 @@ const Hero = () => {
             Revolutionizing lettuce cultivation through intelligent automation, real-time monitoring, and data-driven agriculture at Bohol Island State University-Bilar
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-all">
-              Learn More
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              View Demo
-            </Button>
+          <div className="flex justify-center pt-4">
+            <Link to="/about">
+              <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-all">
+                Learn More
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
